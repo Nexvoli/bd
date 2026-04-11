@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexvoli BD | বাংলাদেশের ১ নম্বর স্পোর্টস ও গেমিং পোর্টাল</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --bg-card: rgba(30, 41, 59, 0.7);
+            --primary-yellow: #ffdf00;
+            --primary-hover: #ffcc00;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-light: rgba(255, 223, 0, 0.2);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        .en-font { font-family: 'Outfit', sans-serif; }
+
+        /* Animated Background */
+        .ambient-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background: radial-gradient(circle at 50% 0%, rgba(255, 223, 0, 0.1) 0%, transparent 60%); pointer-events: none; }
+
+        /* Top Bar */
+        .top-banner { background: #000; text-align: center; padding: 8px; font-size: 0.9rem; font-weight: 600; color: var(--primary-yellow); border-bottom: 1px solid var(--border-light); }
+        .top-banner span { color: #fff; }
+
+        /* Navigation */
+        nav { padding: 15px 5%; display: flex; justify-content: center; align-items: center; background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .brand-logo { font-size: 1.8rem; font-weight: 900; color: #fff; text-decoration: none; font-family: 'Outfit', sans-serif; }
+        .brand-logo span { color: var(--primary-yellow); }
+
+        /* Hero Section */
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; text-align: center; }
+        .security-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 223, 0, 0.1); border: 1px solid var(--border-light); color: var(--primary-yellow); padding: 8px 18px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; margin-bottom: 25px; animation: pulseBadge 2s infinite; }
+        @keyframes pulseBadge { 0% { box-shadow: 0 0 0 0 rgba(255, 223, 0, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(255, 223, 0, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 223, 0, 0); } }
+        
+        h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.3; margin-bottom: 15px; }
+        h1 span { color: var(--primary-yellow); }
+        .subtitle { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 40px; }
+
+        /* Main Offer Card */
+        .offer-card { background: var(--bg-card); border: 2px solid var(--primary-yellow); border-radius: 20px; padding: 35px 25px; position: relative; overflow: hidden; backdrop-filter: blur(10px); box-shadow: 0 15px 40px rgba(255, 223, 0, 0.15); transition: transform 0.3s; }
+        .offer-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(255, 223, 0, 0.25); }
+        
+        .ribbon { position: absolute; top: 15px; left: -35px; background: var(--primary-yellow); color: #000; padding: 5px 40px; transform: rotate(-45deg); font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; }
+
+        .logo-box { background: #000; padding: 15px 30px; border-radius: 12px; display: inline-block; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
+        .logo-box span { font-size: 2.5rem; color: #fff; font-style: italic; font-weight: 900; letter-spacing: -1px; }
+        .logo-box span.yellow { color: var(--primary-yellow); }
+
+        .offer-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+        .rating { color: #ffdf00; font-size: 1.2rem; margin-bottom: 20px; }
+
+        /* KPI Highlights */
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 25px; }
+        .stat-box { background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.05); padding: 15px 10px; border-radius: 12px; }
+        .stat-box span { display: block; font-size: 0.8rem; color: var(--text-muted); margin-bottom: 5px; }
+        .stat-box strong { font-size: 1.3rem; color: var(--primary-yellow); font-weight: 700; }
+
+        /* Activation Steps (To fulfill KPI) */
+        .steps-box { background: rgba(255, 223, 0, 0.05); border-left: 4px solid var(--primary-yellow); padding: 15px; border-radius: 8px; text-align: left; margin-bottom: 30px; }
+        .steps-box h4 { margin-bottom: 10px; color: #fff; font-size: 1.1rem; }
+        .steps-box ul { list-style: none; margin-left: 5px; }
+        .steps-box li { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
+        .steps-box li::before { content: "✅"; font-size: 0.9rem; }
+
+        /* CTA Button */
+        .cta-btn { display: block; width: 100%; background: linear-gradient(90deg, #ffdf00, #ffba00); color: #000; font-size: 1.3rem; font-weight: 700; text-align: center; padding: 18px; border-radius: 50px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 10px 20px rgba(255, 223, 0, 0.3); transition: 0.3s; }
+        .cta-btn:hover { transform: scale(1.02); box-shadow: 0 15px 30px rgba(255, 223, 0, 0.4); }
+
+        /* Payment Methods */
+        .payment-methods { margin-top: 25px; font-size: 0.9rem; color: var(--text-muted); }
+        .payment-methods strong { color: #fff; }
+
+        /* Footer */
+        footer { margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding: 30px 20px; text-align: center; font-size: 0.85rem; color: #64748b; }
+        .trust-icons { display: flex; justify-content: center; gap: 15px; margin-bottom: 15px; }
+        .trust-icons span { border: 1px solid #475569; padding: 5px 12px; border-radius: 5px; font-weight: 600; color: #94a3b8; }
+
+        /* Live Toast */
+        .live-toast { position: fixed; bottom: -100px; left: 20px; background: rgba(15, 23, 42, 0.95); border-left: 4px solid var(--primary-yellow); padding: 15px 20px; border-radius: 8px; display: flex; align-items: center; gap: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: bottom 0.5s ease; z-index: 100; }
+        .live-toast.show { bottom: 20px; }
+        .toast-icon { background: rgba(255, 223, 0, 0.2); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: var(--primary-yellow); font-weight: bold; font-size: 1.2rem; }
+        .toast-text { font-size: 0.85rem; color: #cbd5e1; text-align: left; }
+        .toast-text span { color: #fff; font-weight: bold; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .stats-grid { grid-template-columns: 1fr; gap: 15px; }
+            .offer-card { padding: 30px 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-bg"></div>
+
+    <div class="top-banner">
+        🔥 <span>অফারটি শুধুমাত্র বাংলাদেশী ইউজারদের জন্য প্রযোজ্য</span> 🇧🇩
+    </div>
+
+    <nav>
+        <a href="#" class="brand-logo">bd.<span>nexvoli</span>.com</a>
+    </nav>
+
+    <div class="container">
+        <div class="security-badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+            ১০০% ভেরিফাইড এবং নিরাপদ
+        </div>
+
+        <h1>বাংলাদেশের ১ নম্বর <span>প্রিমিয়াম গেমিং পোর্টাল</span></h1>
+        <p class="subtitle">স্পোর্টস প্রেডিকশন এবং প্রিমিয়াম গেমিংয়ের সেরা অভিজ্ঞতা। আজই জয়েন করুন এবং জিতে নিন এক্সক্লুসিভ ওয়েলকাম রিওয়ার্ড!</p>
+
+        <div class="offer-card">
+            <div class="ribbon">TOP RATED</div>
+            
+            <div class="logo-box en-font">
+                <span>BABU<span class="yellow">88</span></span>
+            </div>
+
+            <h2 class="offer-title">Babu88 এক্সক্লুসিভ অ্যাক্সেস</h2>
+            <div class="rating">★★★★★ <span style="font-size: 0.9rem; color: var(--text-muted);">(4.9/5 রেটিং)</span></div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span>মিনিমাম ডিপোজিট</span>
+                    <strong class="en-font">৳ ২০০</strong> </div>
+                <div class="stat-box">
+                    <span>উইথড্রয়াল স্পিড</span>
+                    <strong>ইনস্ট্যান্ট</strong>
+                </div>
+                <div class="stat-box">
+                    <span>সাপোর্ট</span>
+                    <strong>২৪/৭ লাইভ</strong>
+                </div>
+            </div>
+
+            <div class="steps-box">
+                <h4>🎁 ওয়েলকাম অফারটি যেভাবে অ্যাক্টিভ করবেন:</h4>
+                <ul>
+                    <li>নিচের বাটনে ক্লিক করে সঠিক তথ্য দিয়ে অ্যাকাউন্ট তৈরি করুন।</li>
+                    <li>বিকাশ বা নগদের মাধ্যমে <strong>মাত্র ২০০ টাকা</strong> ডিপোজিট করুন।</li>
+                    <li>অ্যাকাউন্ট অ্যাক্টিভ করতে <strong>অবশ্যই যেকোনো ১টি গেম খেলুন বা প্রেডিক্ট করুন।</strong></li>
+                </ul>
+            </div>
+
+            <a href="YOUR_BABU88_LINK_HERE" class="cta-btn" target="_blank">অ্যাকাউন্ট খুলুন এবং খেলুন</a>
+
+            <div class="payment-methods">
+                পেমেন্ট মাধ্যম: <strong>বিকাশ, নগদ, রকেট এবং উপায়</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="live-toast" id="toast">
+        <div class="toast-icon en-font">৳</div>
+        <div class="toast-text">
+            <span>ঢাকা থেকে একজন ইউজার</span><br>
+            মাত্র ২০০ টাকা ডিপোজিট করে জয়েন করেছেন!
+        </div>
+    </div>
+
+    <footer>
+        <div class="trust-icons">
+            <span>🔞 18+ Only</span>
+            <span>Play Responsibly</span>
+            <span>SSL Secured</span>
+        </div>
+        <p>Disclaimer: This is an independent information portal. Please ensure you meet all legal requirements before playing. Play responsibly.</p>
+        <p style="margin-top: 10px;">&copy; 2026 Nexvoli BD. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Fake Live Notification Logic
+        setTimeout(() => {
+            const toast = document.getElementById("toast");
+            toast.classList.add("show");
+            
+            setTimeout(() => {
+                toast.classList.remove("show");
+            }, 4000); 
+        }, 2000); 
+    </script>
+
+</body>
+</html>
