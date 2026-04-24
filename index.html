@@ -3,227 +3,288 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexvoli BD | বাংলাদেশের সেরা গেমিং প্ল্যাটফর্ম রিভিউ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@700;900&display=swap" rel="stylesheet">
+    <title>Betzo Official Review 2026 | Nexvoli BD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Outfit:wght@500;700;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-dark: #0a0f16;
-            --bg-card: rgba(20, 30, 40, 0.8);
-            --primary-green: #00ff66; /* Betzo Theme Color */
+            --bg-dark: #070b12;
+            --bg-section: #0c131d;
+            --bg-card: #111a26;
+            --primary: #00ff66; /* Betzo Green */
             --primary-hover: #00cc55;
-            --text-main: #f8fafc;
+            --text-main: #f1f5f9;
             --text-muted: #94a3b8;
-            --border-light: rgba(0, 255, 102, 0.2);
+            --border-color: rgba(0, 255, 102, 0.15);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        body { font-family: 'Hind Siliguri', sans-serif; background-color: var(--bg-dark); color: var(--text-main); line-height: 1.7; overflow-x: hidden; }
         .en-font { font-family: 'Outfit', sans-serif; }
-
-        /* Background Effects */
-        .ambient-bg { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background: radial-gradient(circle at 50% 10%, rgba(0, 255, 102, 0.1) 0%, transparent 50%); pointer-events: none; }
+        a { text-decoration: none; }
 
         /* Top Bar */
-        .top-banner { background: #000; text-align: center; padding: 10px; font-size: 0.9rem; font-weight: 600; color: var(--primary-green); border-bottom: 1px solid var(--border-light); letter-spacing: 0.5px; }
-        .top-banner span { color: #fff; }
+        .top-bar { background: #000; padding: 8px 5%; font-size: 0.85rem; color: var(--text-muted); display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-color); }
+        .top-bar span { color: var(--primary); font-weight: 600; }
 
-        /* Navigation */
-        nav { padding: 15px 5%; display: flex; justify-content: center; align-items: center; background: rgba(10, 15, 22, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(255,255,255,0.05); position: sticky; top: 0; z-index: 100; }
-        .brand-logo { font-size: 1.8rem; font-weight: 900; color: #fff; text-decoration: none; font-family: 'Outfit', sans-serif; }
-        .brand-logo span { color: var(--primary-green); }
+        /* Navbar */
+        nav { background: rgba(7, 11, 18, 0.95); backdrop-filter: blur(10px); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .logo { font-size: 1.8rem; font-weight: 900; color: #fff; }
+        .logo span { color: var(--primary); }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: var(--text-main); font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-btn { background: transparent; border: 1px solid var(--primary); color: var(--primary); padding: 6px 15px; border-radius: 5px; font-weight: 600; }
 
         /* Hero Section */
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        .hero-text { text-align: center; margin-bottom: 40px; }
-        .trust-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 255, 102, 0.1); border: 1px solid var(--border-light); color: var(--primary-green); padding: 8px 18px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; }
+        .hero { padding: 60px 5%; text-align: center; background: radial-gradient(circle at center, rgba(0, 255, 102, 0.05) 0%, transparent 60%); border-bottom: 1px solid var(--border-color); }
+        .expert-badge { display: inline-block; background: rgba(0, 255, 102, 0.1); color: var(--primary); padding: 6px 15px; border-radius: 50px; font-size: 0.9rem; font-weight: 600; border: 1px solid var(--border-color); margin-bottom: 20px; }
+        .hero h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; margin-bottom: 15px; }
+        .hero p { font-size: 1.1rem; color: var(--text-muted); max-width: 800px; margin: 0 auto 30px; }
+        .author-info { display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 0.9rem; color: #64748b; margin-bottom: 20px; }
+        .author-info img { width: 30px; height: 30px; border-radius: 50%; }
+
+        /* Layout Container */
+        .container { max-width: 1100px; margin: 0 auto; padding: 50px 5%; display: grid; grid-template-columns: 2fr 1fr; gap: 40px; }
+
+        /* Left Column (Main Content) */
+        .main-content h2 { font-size: 1.8rem; margin-bottom: 20px; color: #fff; border-bottom: 2px solid var(--border-color); padding-bottom: 10px; display: inline-block; }
+        .main-content p { margin-bottom: 20px; color: #cbd5e1; font-size: 1.05rem; }
+
+        /* Summary Box */
+        .summary-box { background: var(--bg-card); border: 1px solid var(--primary); border-radius: 16px; padding: 30px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,255,102,0.05); }
+        .summary-header { display: flex; align-items: center; gap: 20px; margin-bottom: 20px; }
+        .brand-box { background: #000; padding: 10px 20px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); font-size: 2rem; font-weight: 900; color: #fff; font-style: italic; }
+        .brand-box span { color: var(--primary); }
+        .rating-big { color: #ffdf00; font-size: 1.2rem; }
         
-        h1 { font-size: 2.5rem; font-weight: 700; line-height: 1.3; margin-bottom: 15px; }
-        h1 span { color: var(--primary-green); }
-        .subtitle { font-size: 1.1rem; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+        .quick-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 25px; }
+        .stat { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px; text-align: center; border: 1px solid rgba(255,255,255,0.02); }
+        .stat span { display: block; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 5px; }
+        .stat strong { font-size: 1.1rem; color: #fff; }
 
-        /* Review Card - Top Focus */
-        .review-card { background: var(--bg-card); border: 1px solid var(--primary-green); border-radius: 20px; padding: 35px; position: relative; overflow: hidden; backdrop-filter: blur(15px); box-shadow: 0 10px 40px rgba(0, 255, 102, 0.15); animation: float 6s ease-in-out infinite; }
-        @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-5px); } 100% { transform: translateY(0px); } }
+        .cta-btn { display: block; width: 100%; background: linear-gradient(90deg, #00ff66, #00cc55); color: #000; font-size: 1.2rem; font-weight: 700; text-align: center; padding: 15px; border-radius: 8px; text-transform: uppercase; box-shadow: 0 5px 15px rgba(0,255,102,0.2); transition: 0.3s; }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,255,102,0.3); }
+
+        /* Pros and Cons */
+        .pros-cons-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; }
+        .pros-box, .cons-box { background: rgba(0,0,0,0.2); padding: 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
+        .pros-box h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+        .cons-box h3 { color: #ff4d4d; margin-bottom: 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 8px; }
+        .pros-box ul, .cons-box ul { list-style: none; }
+        .pros-box li, .cons-box li { margin-bottom: 10px; display: flex; gap: 10px; font-size: 0.95rem; color: #cbd5e1; }
+        .pros-box li::before { content: "✓"; color: var(--primary); font-weight: bold; }
+        .cons-box li::before { content: "✕"; color: #ff4d4d; font-weight: bold; }
+
+        /* Step by Step Guide */
+        .guide-box { background: var(--bg-card); padding: 30px; border-radius: 12px; border-left: 4px solid var(--primary); margin-bottom: 40px; }
+        .step { display: flex; gap: 15px; margin-bottom: 20px; }
+        .step-num { background: var(--primary); color: #000; width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 1.1rem; flex-shrink: 0; }
+        .step-text h4 { color: #fff; font-size: 1.1rem; margin-bottom: 5px; }
+        .step-text p { font-size: 0.95rem; margin-bottom: 0; }
+
+        /* FAQ Section */
+        .faq-item { background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.05); margin-bottom: 10px; border-radius: 8px; padding: 15px 20px; }
+        .faq-item h4 { color: var(--primary); margin-bottom: 8px; font-size: 1.05rem; }
+        .faq-item p { font-size: 0.95rem; color: #94a3b8; margin-bottom: 0; }
+
+        /* Right Column (Sidebar) */
+        .sidebar-widget { background: var(--bg-card); padding: 25px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); margin-bottom: 30px; position: sticky; top: 100px; }
+        .sidebar-widget h3 { font-size: 1.2rem; margin-bottom: 15px; color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; }
         
-        .ribbon { position: absolute; top: 20px; right: -35px; background: var(--primary-green); color: #000; padding: 5px 40px; transform: rotate(45deg); font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-
-        /* Logo Area */
-        .logo-header { display: flex; align-items: center; gap: 20px; margin-bottom: 25px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 20px; }
-        .logo-box { background: #0b111a; padding: 10px 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; }
-        .logo-box span { font-size: 2.2rem; color: #fff; font-style: italic; font-weight: 900; letter-spacing: -1px; }
-        .logo-box span.green { color: var(--primary-green); }
-        .site-info h2 { font-size: 1.5rem; margin-bottom: 5px; }
-        .rating { color: #ffdf00; font-size: 1rem; }
-        .rating span { color: var(--text-muted); font-size: 0.9rem; margin-left: 5px; }
-
-        /* Details Grid */
-        .details-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-bottom: 25px; }
-        .detail-item { background: rgba(0,0,0,0.4); padding: 15px; border-radius: 12px; text-align: center; border: 1px solid rgba(255,255,255,0.02); }
-        .detail-item span { display: block; font-size: 0.85rem; color: #64748b; margin-bottom: 5px; }
-        .detail-item strong { font-size: 1.2rem; color: #fff; font-weight: 700; }
-
-        /* Pros & Cons Review Section */
-        .pros-cons-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
-        .pros-cons { background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
-        .pros-cons h4 { margin-bottom: 15px; font-size: 1.1rem; }
-        .pros-cons ul { list-style: none; }
-        .pros-cons li { font-size: 0.95rem; color: #cbd5e1; margin-bottom: 10px; display: flex; gap: 10px; align-items: flex-start; }
-        .pros h4 { color: var(--primary-green); }
-        .pros li::before { content: "✓"; color: var(--primary-green); font-weight: bold; }
-        .cons h4 { color: #ff4d4d; }
-        .cons li::before { content: "✕"; color: #ff4d4d; font-weight: bold; }
-
-        /* Psychological Gamification Alert (To prevent inactive players) */
-        .activation-alert { background: rgba(0, 255, 102, 0.05); border-left: 4px solid var(--primary-green); padding: 15px; border-radius: 8px; margin-bottom: 30px; font-size: 0.95rem; color: #e2e8f0; }
-        .activation-alert strong { color: var(--primary-green); }
-
-        /* CTA Button */
-        .cta-btn { display: block; width: 100%; background: linear-gradient(90deg, #00ff66, #00cc55); color: #000; font-size: 1.2rem; font-weight: 700; text-align: center; padding: 16px; border-radius: 50px; text-decoration: none; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 10px 20px rgba(0, 255, 102, 0.3); transition: 0.3s; }
-        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 30px rgba(0, 255, 102, 0.4); }
-
-        /* Payment Icons */
-        .payment-methods { margin-top: 25px; text-align: center; font-size: 0.9rem; color: var(--text-muted); display: flex; justify-content: center; align-items: center; gap: 15px; flex-wrap: wrap; }
-        .pay-badge { background: #fff; color: #000; padding: 4px 12px; border-radius: 4px; font-weight: bold; font-size: 0.8rem; }
+        .pay-methods { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .pay-badge { background: #fff; color: #000; padding: 5px 12px; border-radius: 4px; font-weight: bold; font-size: 0.85rem; }
         .bkash { color: #e2136e; } .nagad { color: #ed1c24; } .rocket { color: #8c1515; }
+        
+        .score-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 0.95rem; color: #cbd5e1; }
+        .score-row strong { color: var(--primary); }
 
-        /* Public Reviews */
-        .public-reviews { margin-top: 50px; }
-        .review-title { font-size: 1.5rem; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 10px; }
-        .user-review { background: rgba(255,255,255,0.02); padding: 20px; border-radius: 12px; margin-bottom: 15px; border-left: 3px solid var(--primary-green); }
-        .user-header { display: flex; justify-content: space-between; margin-bottom: 5px; }
-        .user-name { font-weight: 700; color: #fff; }
-        .user-time { font-size: 0.8rem; color: #64748b; }
+        /* Footer */
+        footer { background: #000; padding: 40px 5%; text-align: center; border-top: 1px solid var(--border-color); margin-top: 50px; }
+        .footer-trust { display: flex; justify-content: center; gap: 20px; margin-bottom: 20px; }
+        .footer-trust span { border: 1px solid #334155; padding: 5px 15px; border-radius: 5px; color: #64748b; font-size: 0.85rem; font-weight: 600; }
+        .disclaimer { font-size: 0.8rem; color: #475569; max-width: 800px; margin: 0 auto; line-height: 1.6; }
 
-        @media (max-width: 768px) {
-            .details-grid { grid-template-columns: 1fr; gap: 10px; }
-            .pros-cons-wrap { grid-template-columns: 1fr; }
-            h1 { font-size: 2rem; }
-            .logo-header { flex-direction: column; text-align: center; }
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+            .sidebar-widget { position: static; }
+            .hero h1 { font-size: 2.2rem; }
+            .pros-cons-container { grid-template-columns: 1fr; }
+            .quick-stats { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <div class="ambient-bg"></div>
-
-    <div class="top-banner">
-        🔥 <span>অফিসিয়াল রিভিউ:</span> শুধুমাত্র বাংলাদেশী (BD) ইউজারদের জন্য
+    <div class="top-bar">
+        <div>🍁 <span>সার্টিফাইড রিভিউ:</span> স্বাধীন এবং নিরপেক্ষ গেমিং পোর্নাল অ্যানালাইসিস</div>
+        <div>আপডেট: এপ্রিল ২০২৬</div>
     </div>
 
     <nav>
-        <a href="#" class="brand-logo">bd.<span>nexvoli</span>.com</a>
+        <a href="#" class="logo en-font">bd.<span>nexvoli</span>.com</a>
+        <div class="nav-links">
+            <a href="#">হোম</a>
+            <a href="#">টপ গেমস</a>
+            <a href="#">পেমেন্ট গাইড</a>
+        </div>
+        <button class="nav-btn">যোগাযোগ</button>
     </nav>
 
+    <header class="hero">
+        <div class="expert-badge">✓ এক্সপার্ট রেটেড #১ পোর্টাল</div>
+        <h1>Betzo রিভিউ ২০২৬: এটি কি বাংলাদেশের <span>সবচেয়ে নিরাপদ</span> গেমিং প্ল্যাটফর্ম?</h1>
+        <p>আমরা ১০০% নিরপেক্ষভাবে Betzo-এর সুবিধা, অসুবিধা, পেমেন্ট স্পিড এবং গেমপ্লে টেস্ট করেছি। জানুন কেন হাজারো বাংলাদেশী ইউজার এই প্ল্যাটফর্মে যুক্ত হচ্ছে।</p>
+        
+        <div class="author-info">
+            <span style="background: var(--primary); width: 30px; height: 30px; border-radius: 50%; display: inline-block; color: #000; font-weight: bold; line-height: 30px;">A</span>
+            <span>লিখেছেন: <strong>আকাশ তরফদার</strong> (গেমিং অ্যানালিস্ট) • পড়ার সময়: ৪ মিনিট</span>
+        </div>
+    </header>
+
     <div class="container">
-        <div class="hero-text">
-            <div class="trust-badge">
-                ✓ এক্সপার্ট ভেরিফাইড পোর্টাল
-            </div>
-            <h1>বাংলাদেশের সেরা <span>প্রিমিয়াম গেমস ও রিভিউ</span></h1>
-            <p class="subtitle">আমরা টেস্ট করেছি বাংলাদেশের সবচেয়ে জনপ্রিয় গেমিং প্ল্যাটফর্মগুলো। দ্রুত উইথড্রয়াল, চমৎকার গেমপ্লে এবং সম্পূর্ণ সিকিউরড প্ল্যাটফর্মের বিস্তারিত রিভিউ জানুন।</p>
-        </div>
-
-        <div class="review-card">
-            <div class="ribbon">#1 RATED BD</div>
+        <main class="main-content">
             
-            <div class="logo-header">
-                <div class="logo-box en-font">
-                    <span>BET<span class="green">ZO</span></span>
+            <div class="summary-box">
+                <div class="summary-header">
+                    <div class="brand-box en-font">BET<span>ZO</span></div>
+                    <div>
+                        <h2 style="border: none; margin: 0; padding: 0;">Betzo Official (BD)</h2>
+                        <div class="rating-big">★★★★★ <span style="font-size: 0.9rem; color: #94a3b8;">(৯.৮/১০)</span></div>
+                    </div>
                 </div>
-                <div class="site-info">
-                    <h2>Betzo Official (বাংলাদেশ)</h2>
-                    <div class="rating">★★★★★ <span>(৯.৮/১০ রেটিং)</span></div>
+
+                <div class="quick-stats">
+                    <div class="stat">
+                        <span>অ্যাকাউন্ট ভেরিফিকেশন</span>
+                        <strong>ইনস্ট্যান্ট</strong>
+                    </div>
+                    <div class="stat">
+                        <span>লুকানো শর্ত (KPIs)</span>
+                        <strong style="color: var(--primary);">নেই</strong>
+                    </div>
+                    <div class="stat">
+                        <span>উইথড্রয়াল টাইম</span>
+                        <strong>৫-১০ মিনিট</strong>
+                    </div>
                 </div>
+
+                <a href="https://go.gooddep.com/betzo.bd/exn2fhxkq5" class="cta-btn" target="_blank">অফিসিয়াল সাইটে ভিজিট করুন</a>
             </div>
 
-            <div class="details-grid">
-                <div class="detail-item">
-                    <span>লুকানো শর্ত (KPIs)</span>
-                    <strong style="color: var(--primary-green);">নেই (None)</strong>
-                </div>
-                <div class="detail-item">
-                    <span>উইথড্রয়াল স্পিড</span>
-                    <strong>ইনস্ট্যান্ট</strong>
-                </div>
-                <div class="detail-item">
-                    <span>গেমের ধরণ</span>
-                    <strong>প্রিমিয়াম আর্কেড ও স্লট</strong>
-                </div>
-            </div>
+            <h2>Betzo-এর বিস্তারিত রিভিউ</h2>
+            <p>বর্তমান সময়ে বাংলাদেশে প্রচুর অনলাইন গেমিং এবং স্পোর্টস প্রেডিকশন সাইট রয়েছে। কিন্তু বেশিরভাগ সাইটেই টাকা তোলার সময় নানা রকম লুকানো শর্ত বা KPI (Key Performance Indicator) জুড়ে দেওয়া হয়। আমাদের রিভিউতে <strong>Betzo</strong> সবচেয়ে বেশি পয়েন্ট পেয়েছে কারণ এদের সিস্টেমে <strong>কোনো লুকানো শর্ত (KPI: None) নেই</strong>।</p>
+            <p>ডিজাইনের দিক থেকে সাইটটি অত্যন্ত প্রিমিয়াম। বিশেষ করে যারা মোবাইল ফোন দিয়ে গেম খেলতে পছন্দ করেন, তাদের জন্য এর ইন্টারফেস খুব স্মুথ। স্লট এবং আর্কেড গেমের জন্য এটি বর্তমানে সেরা চয়েস।</p>
 
-            <div class="pros-cons-wrap">
-                <div class="pros-cons pros">
-                    <h4>কেন আমরা Betzo পছন্দ করি:</h4>
+            <h2>সুবিধা এবং অসুবিধা</h2>
+            <div class="pros-cons-container">
+                <div class="pros-box">
+                    <h3>👍 সুবিধা (Pros)</h3>
                     <ul>
-                        <li>খুবই সহজে এবং দ্রুত অ্যাকাউন্ট খোলা যায়</li>
-                        <li>কোনো জটিল বা লুকানো উইথড্রয়াল শর্ত (KPI) নেই</li>
-                        <li>অসাধারণ গেমপ্লে এবং মোবাইল ফ্রেন্ডলি ডিজাইন</li>
-                        <li>বিকাশ/নগদের মাধ্যমে দ্রুত ট্রানজ্যাকশন</li>
+                        <li>খুব দ্রুত বিকাশ ও নগদে লেনদেন করা যায়</li>
+                        <li>অ্যাকাউন্ট খোলা এবং ভেরিফাই করা একদম সহজ</li>
+                        <li>উইথড্র করার জন্য কোনো জটিল শর্ত বা টার্গেট নেই</li>
+                        <li>দারুণ সব প্রিমিয়াম গেমসের কালেকশন</li>
                     </ul>
                 </div>
-                <div class="pros-cons cons">
-                    <h4>কিছু সীমাবদ্ধতা:</h4>
+                <div class="cons-box">
+                    <h3>👎 অসুবিধা (Cons)</h3>
                     <ul>
-                        <li>অনেক বেশি ইনঅ্যাক্টিভ থাকলে অ্যাকাউন্ট পজ হতে পারে</li>
-                        <li>শুধুমাত্র ১৮+ বয়সীদের জন্য প্রযোজ্য</li>
+                        <li>রেজিস্ট্রেশন করে অনেকদিন ইনঅ্যাক্টিভ থাকলে অ্যাকাউন্ট পজ হতে পারে</li>
+                        <li>শুধুমাত্র ১৮+ বছর বয়সীদের জন্য অনুমোদিত</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="activation-alert">
-                <strong>💡 প্রো-টিপ:</strong> অ্যাকাউন্ট ১০০% সচল এবং ভিআইপি রিওয়ার্ড পেতে রেজিস্ট্রেশন ও ডিপোজিটের পর <strong>অবশ্যই রেগুলার গেম খেলা চালিয়ে যান</strong>। ইনঅ্যাক্টিভ বা গেম না খেলা অ্যাকাউন্টগুলো সিস্টেম থেকে বাতিল হয়ে যেতে পারে।
-            </div>
-
-            <a href="https://go.gooddep.com/betzo.bd/exn2fhxkq5" class="cta-btn" target="_blank">অফিসিয়াল সাইটে ভিজিট করুন</a>
-
-            <div class="payment-methods">
-                সাপোর্টেড পেমেন্ট: 
-                <span class="pay-badge bkash">bKash</span>
-                <span class="pay-badge nagad">Nagad</span>
-                <span class="pay-badge rocket">Rocket</span>
-                <span class="pay-badge">Upay</span>
-            </div>
-        </div>
-
-        <div class="public-reviews">
-            <h3 class="review-title">রিয়েল ইউজার রিভিউ</h3>
+            <h2>কীভাবে অ্যাকাউন্ট সুরক্ষিত ও সচল রাখবেন? (গাইডলাইন)</h2>
+            <p>যেহেতু এটি একটি প্রিমিয়াম পোর্টাল, তাই ফেক বা ইনঅ্যাক্টিভ অ্যাকাউন্ট তারা সাপোর্ট করে না। অ্যাকাউন্ট খোলার পর নিচের ধাপগুলো অনুসরণ করা বাধ্যতামূলক:</p>
             
-            <div class="user-review">
-                <div class="user-header">
-                    <span class="user-name">সাকিব আহমেদ (ঢাকা)</span>
-                    <span class="user-time">ভেরিফাইড • ২ ঘণ্টা আগে</span>
+            <div class="guide-box">
+                <div class="step">
+                    <div class="step-num">১</div>
+                    <div class="step-text">
+                        <h4>অ্যাকাউন্ট তৈরি করুন</h4>
+                        <p>নিরাপদ লিংক ব্যবহার করে আপনার সঠিক ফোন নাম্বার এবং ইমেইল দিয়ে ফর্ম পূরণ করুন।</p>
+                    </div>
                 </div>
-                <div style="color: #ffdf00; font-size: 0.9rem; margin-bottom: 5px;">★★★★★</div>
-                <p style="font-size: 0.95rem; color: #cbd5e1;">"প্ল্যাটফর্মটির ডিজাইন খুব সুন্দর। বিকাশ দিয়ে ডিপোজিট করেছি, সাথে সাথেই অ্যাড হয়েছে। সবচেয়ে ভালো লেগেছে এদের গেমের গ্রাফিক্স। কোনো লুকানো রুলস নেই, যা জিতি তাই তুলতে পারি।"</p>
+                <div class="step">
+                    <div class="step-num">২</div>
+                    <div class="step-text">
+                        <h4>প্রথম ডিপোজিট সম্পন্ন করুন</h4>
+                        <p>আপনার বিকাশ, নগদ বা রকেট অ্যাকাউন্ট থেকে আপনার পছন্দমতো অ্যামাউন্ট ডিপোজিট করুন। এটি সাথে সাথেই আপনার অ্যাকাউন্টে যোগ হবে।</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-num">৩</div>
+                    <div class="step-text">
+                        <h4 style="color: var(--primary);">গেম খেলা শুরু করুন (সবচেয়ে গুরুত্বপূর্ণ)</h4>
+                        <p>ডিপোজিট করার পর শুধু বসে থাকবেন না। <strong>আপনার অ্যাকাউন্টটি ভিআইপি লিস্টে অ্যাক্টিভ করতে অবশ্যই নিয়মিত গেম খেলুন বা প্রেডিক্ট করুন।</strong> ডিপোজিট করে কোনো অ্যাক্টিভিটি না দেখালে অ্যাকাউন্ট রেস্ট্রিক্টেড হয়ে যেতে পারে।</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="user-review">
-                <div class="user-header">
-                    <span class="user-name">মেহেদী হাসান (সিলেট)</span>
-                    <span class="user-time">ভেরিফাইড • ১ দিন আগে</span>
-                </div>
-                <div style="color: #ffdf00; font-size: 0.9rem; margin-bottom: 5px;">★★★★★</div>
-                <p style="font-size: 0.95rem; color: #cbd5e1;">"রিভিউ পড়ে ট্রাই করলাম। আসলেই সাইটটা খুব ফাস্ট। রেগুলার খেললে এরা ভালো রিওয়ার্ড দেয়। মোবাইল দিয়ে খেলতে কোনো ল্যাগ করে না।"</p>
+            <h2>সাধারণ প্রশ্ন ও উত্তর (FAQ)</h2>
+            <div class="faq-item">
+                <h4>Betzo কি বাংলাদেশের জন্য নিরাপদ?</h4>
+                <p>হ্যাঁ, এটি একটি গ্লোবালি লাইসেন্সড এবং এনক্রিপ্টেড প্ল্যাটফর্ম। আপনার তথ্য এখানে ১০০% সুরক্ষিত থাকে।</p>
             </div>
-        </div>
+            <div class="faq-item">
+                <h4>টাকা তুলতে কতক্ষণ সময় লাগে?</h4>
+                <p>বিকাশ বা নগদের মাধ্যমে সাধারণত ৫ থেকে ৩০ মিনিটের মধ্যেই উইথড্রয়াল সম্পন্ন হয়ে যায়।</p>
+            </div>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>পেমেন্ট মেথড</h3>
+                <div class="pay-methods">
+                    <span class="pay-badge bkash">bKash</span>
+                    <span class="pay-badge nagad">Nagad</span>
+                    <span class="pay-badge rocket">Rocket</span>
+                    <span class="pay-badge">Upay</span>
+                </div>
+                <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 10px;">মিনিমাম ট্রানজ্যাকশন লিমিট অনুযায়ী পেমেন্ট করুন।</p>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>আমাদের রেটিং</h3>
+                <div class="score-row"><span>ইউজার ইন্টারফেস</span> <strong>৯.৫/১০</strong></div>
+                <div class="score-row"><span>পেমেন্ট স্পিড</span> <strong>১০/১০</strong></div>
+                <div class="score-row"><span>গেম ভ্যারাইটি</span> <strong>৯.৮/১০</strong></div>
+                <div class="score-row"><span>কাস্টমার সাপোর্ট</span> <strong>৯.০/১০</strong></div>
+                <hr style="border-color: rgba(255,255,255,0.05); margin: 15px 0;">
+                
+                <a href="https://go.gooddep.com/betzo.bd/exn2fhxkq5" class="cta-btn" style="font-size: 1rem; padding: 12px;" target="_blank">অ্যাকাউন্ট খুলুন</a>
+            </div>
+        </aside>
     </div>
+
+    <footer>
+        <div class="footer-trust">
+            <span>🔞 18+ Only</span>
+            <span>Play Responsibly</span>
+            <span>SSL Secured Portal</span>
+        </div>
+        <p class="disclaimer"><strong>দাবিত্যাগ (Disclaimer):</strong> Nexvoli BD একটি স্বাধীন রিভিউ ওয়েবসাইট। আমরা শুধুমাত্র তথ্য প্রদান করি। গেম খেলা বা ডিপোজিট করা সম্পূর্ণ আপনার নিজস্ব দায়িত্ব। আপনার বয়স অবশ্যই ১৮ বছরের বেশি হতে হবে। আপনার এলাকার আইন অনুযায়ী অনলাইনে খেলা বৈধ কি না তা যাচাই করে নিন।</p>
+        <p style="margin-top: 15px; font-size: 0.85rem; color: #334155;">&copy; 2026 Nexvoli Review Authority. All rights reserved.</p>
+    </footer>
 
     <script>
         document.body.insertAdjacentHTML('beforeend', `
-            <div class="live-toast" id="toast" style="position: fixed; bottom: -100px; left: 20px; background: rgba(10,15,22,0.95); border-left: 4px solid #00ff66; padding: 15px 20px; border-radius: 8px; display: flex; align-items: center; gap: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: bottom 0.5s ease; z-index: 100;">
-                <div style="background: rgba(0,255,102,0.2); width: 40px; height: 40px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #00ff66; font-weight: bold; font-size: 1.2rem;">✓</div>
+            <div class="live-toast" id="toast" style="position: fixed; bottom: -100px; left: 20px; background: rgba(7, 11, 18, 0.95); border-left: 4px solid #00ff66; padding: 15px 20px; border-radius: 8px; display: flex; align-items: center; gap: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: bottom 0.5s ease; z-index: 1000;">
+                <div style="background: rgba(0,255,102,0.2); width: 35px; height: 35px; border-radius: 50%; display: flex; justify-content: center; align-items: center; color: #00ff66; font-weight: bold; font-size: 1.2rem;">✓</div>
                 <div style="font-size: 0.85rem; color: #cbd5e1; text-align: left;">
-                    <span style="color: #fff; font-weight: bold;">নতুন ভেরিফাইড ইউজার</span><br>
-                    এইমাত্র Betzo-তে জয়েন করেছেন!
+                    <span style="color: #fff; font-weight: bold;">সাকিব হাসান</span><br>
+                    এইমাত্র Betzo-তে একটি অ্যাকাউন্ট খুলেছেন
                 </div>
             </div>
         `);
-        setTimeout(() => {
+        setInterval(() => {
             const toast = document.getElementById("toast");
             toast.style.bottom = "20px";
             setTimeout(() => { toast.style.bottom = "-100px"; }, 4000); 
-        }, 2500); 
+        }, 15000); 
     </script>
 
 </body>
